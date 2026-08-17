@@ -13,8 +13,8 @@
   --text-gray: #475569;
   --bg-light: #f8fafc;
   --white: #ffffff;
-  --font-heading: "Playfair Display", serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading:  Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;;
+  --font-body: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif;;
 }
 
 body {
