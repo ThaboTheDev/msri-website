@@ -341,12 +341,25 @@ footer {
 }
 
 .footer-col ul li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .footer-col ul li a:hover {
   color: var(--accent-gold);
   transition: all 0.3s ease;
+}
+
+.footer-col .icons {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    gap: 10px;
+}
+
+.footer-col svg {
+    width: 20px;
+    height: auto;
+    fill: var(--accent-gold-hover);
 }
 
 .footer-bottom {
