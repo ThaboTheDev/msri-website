@@ -103,6 +103,40 @@ header {
   align-items: center;
 }
 
+.link-list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* .has-dropdown-menu {
+    position: relative;
+    padding: 15px 0;
+    cursor: pointer;
+} */
+
+.dropdown-menu {
+    position: absolute;
+    list-style: none;
+    background-color: var(--white);
+    color: var(--accent-gold);
+    width: 130px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin: 0;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.has-dropdown-menu:hover .dropdown-menu{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease-in-out 1s;
+    transform: translateY(1px);
+}
+
 .logo {
   display: flex;
   align-items: center;
