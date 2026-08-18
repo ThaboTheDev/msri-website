@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MSRI | Mzuvukile Slabbert Radebe Institute</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/auto_slider.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,18 +18,20 @@
         <nav class="nav-links">
           <ul class="link-list">
             <li>
-                <a href="#">Home</a>
+              <a href="#">Home</a>
             </li>
 
             <li class="has-dropdown-menu">
-                <a href="#">About Us</a>
+              <a href="#">About Us</a>
 
-                <ul class="dropdown-menu">
-                    <li><a href="#">Our History</a></li>
-                    <li><a href="#">Accreditation</a></li>
-                    <li><a href="#">Leadership</a></li>
-                    <li><a href="#">Partners</a></li>
-                </ul>
+              <ul class="dropdown-menu">
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Accreditation</a></li>
+                <li><a href="#">Leadership</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">News & Media</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
             </li>
 
             <li><a href="#">Academics</a></li>
@@ -148,9 +151,27 @@
     </section>
 
     <section class="partners">
-        <div class="partners-container">
-            
+      <h2>Our Partners</h2>
+      <div class="partners-container" id="slider">
+        <div class="partner-slider" id="track">
+            <img src="assets/ahv-logo.jpeg" alt="" />
+            <img src="assets/hfi-logo.jpeg" alt="" />
+            <img src="assets/ibf-logo.jpeg" alt="" />
+            <img src="assets/ip-logo.jpeg" alt="" />
+            <img src="assets/mta-logo.jpeg" alt="" />
+            <img src="assets/sbhf-logo.jpeg" alt="" />
+            <img src="assets/tf-logo.jpeg" alt="" />
+
+            <!-- duplicates -->
+            <img src="assets/ahv-logo.jpeg" alt="" />
+            <img src="assets/hfi-logo.jpeg" alt="" />
+            <img src="assets/ibf-logo.jpeg" alt="" />
+            <img src="assets/ip-logo.jpeg" alt="" />
+            <img src="assets/mta-logo.jpeg" alt="" />
+            <img src="assets/sbhf-logo.jpeg" alt="" />
+            <img src="assets/tf-logo.jpeg" alt="" />
         </div>
+      </div>
     </section>
 
     <footer>
@@ -238,6 +259,21 @@
                   />
                 </svg>
                 Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icons">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+                Youtube
               </a>
             </li>
           </ul>

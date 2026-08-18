@@ -104,37 +104,31 @@ header {
 }
 
 .link-list {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
-
-/* .has-dropdown-menu {
-    position: relative;
-    padding: 15px 0;
-    cursor: pointer;
-} */
 
 .dropdown-menu {
-    position: absolute;
-    list-style: none;
-    background-color: var(--white);
-    color: var(--accent-gold);
-    width: 130px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 10px 10px;
-    margin: 0;
+  position: absolute;
+  list-style: none;
+  background-color: var(--white);
+  color: var(--accent-gold);
+  width: 130px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin: 0;
 
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
-.has-dropdown-menu:hover .dropdown-menu{
-    visibility: visible;
-    opacity: 1;
-    transition: all ease-in-out 1s;
-    transform: translateY(1px);
+.has-dropdown-menu:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transition: all ease-in-out 1s;
+  transform: translateY(1px);
 }
 
 .logo {
@@ -179,9 +173,55 @@ header {
   text-align: center;
   background-image:
     linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
-    url("assets/hero-img.png");
+    url("../assets/hero-img.png");
   background-size: cover;
   background-position: center;
+  animation: heroslider 24s infinite ease-in-out;
+}
+
+@keyframes heroslider {
+   /* Image 1 */
+  0%, 12.5% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-1.jpg");
+  }
+  /* Image 2 */
+  16.6%, 29.1% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-2.jpg");
+  }
+  /* Image 3 */
+  33.3%, 45.8% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-3.jpg");
+  }
+  /* Image 4 */
+  50%, 62.5% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-4.jpg");
+  }
+  /* Image 5 */
+  66.6%, 79.1% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-5.jpg");
+  }
+  /* Image 6 */
+  83.3%, 95.8% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-6.jpg");
+  }
+  /* Flawless wrap back to Image 1 */
+  100% {
+    background-image:
+      linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
+      url("../assets/hero-img-1.jpg");
+  }
 }
 
 .hero-content {
@@ -346,6 +386,53 @@ header {
   width: 300px;
 }
 
+/* Partners */
+
+.partners h2 {
+  color: var(--primary-navy);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Partners Container Area */
+.partners-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden; /* Cuts off extra logos outside the frame */
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* The Sliding Track */
+.partner-slider {
+  display: flex;
+  gap: 200px; /* Your layout spacing */
+  align-items: center;
+  flex-wrap: nowrap;
+  width: max-content; /* Prevents logos from being compressed */
+  
+  /* Triggers the seamless crawl animation */
+  animation: continuousCrawl 30s linear infinite;
+}
+
+.partner-slider img {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+/* The Seamless Animation Path */
+@keyframes continuousCrawl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Moves by exactly half the track width (the first full set of logos) */
+    transform: translateX(-50%); 
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -384,16 +471,16 @@ footer {
 }
 
 .footer-col .icons {
-    display: flex;
-    align-items: center;
-    width: 35%;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  width: 35%;
+  gap: 10px;
 }
 
 .footer-col svg {
-    width: 20px;
-    height: auto;
-    fill: var(--accent-gold-hover);
+  width: 20px;
+  height: auto;
+  fill: var(--accent-gold-hover);
 }
 
 .footer-bottom {
