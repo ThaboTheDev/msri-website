@@ -131,6 +131,16 @@ header {
   transform: translateY(1px);
 }
 
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown-link svg {
+  width: 20px;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -180,38 +190,44 @@ header {
 }
 
 @keyframes heroslider {
-   /* Image 1 */
-  0%, 12.5% {
+  /* Image 1 */
+  0%,
+  12.5% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-1.jpg");
   }
   /* Image 2 */
-  16.6%, 29.1% {
+  16.6%,
+  29.1% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-2.jpg");
   }
   /* Image 3 */
-  33.3%, 45.8% {
+  33.3%,
+  45.8% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-3.jpg");
   }
   /* Image 4 */
-  50%, 62.5% {
+  50%,
+  62.5% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-4.jpg");
   }
   /* Image 5 */
-  66.6%, 79.1% {
+  66.6%,
+  79.1% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-5.jpg");
   }
   /* Image 6 */
-  83.3%, 95.8% {
+  83.3%,
+  95.8% {
     background-image:
       linear-gradient(rgba(11, 17, 59, 0.5), rgba(11, 17, 59, 0.9)),
       url("../assets/hero-img-6.jpg");
@@ -412,7 +428,7 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   width: max-content; /* Prevents logos from being compressed */
-  
+
   /* Triggers the seamless crawl animation */
   animation: continuousCrawl 30s linear infinite;
 }
@@ -429,7 +445,7 @@ header {
   }
   100% {
     /* Moves by exactly half the track width (the first full set of logos) */
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
   }
 }
 
