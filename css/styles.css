@@ -300,6 +300,14 @@ header {
   padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.academics a {
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .section-header {
@@ -359,8 +367,8 @@ header {
 /* FOUNDATION & VISION */
 
 .foundation {
-  background-color: var(--white);
-  padding: 80px 20px;
+  background-color: var(--primary-navy-light);
+  padding: 40px 20px;
 }
 
 .foundation-container {
@@ -376,13 +384,13 @@ header {
 }
 
 .foundation-text h2 {
-  color: var(--primary-navy);
+  color: var(--white);
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 .foundation-text p {
-  color: var(--text-gray);
+  color: var(--bg-light);
   margin-bottom: 20px;
   font-size: 1.1rem;
 }
@@ -390,7 +398,7 @@ header {
 .foundation-image {
   flex: 1;
   text-align: center;
-  background: var(--primary-navy);
+  /* background: var(--primary-navy); */
   padding: 40px;
   border-radius: 8px;
 }
@@ -407,6 +415,7 @@ header {
 .partners h2 {
   color: var(--primary-navy);
   font-size: 2.5rem;
+  margin-top: 40px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -418,7 +427,7 @@ header {
   margin: auto;
   overflow: hidden; /* Cuts off extra logos outside the frame */
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 /* The Sliding Track */
