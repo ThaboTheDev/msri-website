@@ -1,0 +1,78 @@
+.hero {
+    background: #0B113B;
+background: linear-gradient(171deg, rgba(11, 17, 59, 1) 39%, rgba(21, 30, 84, 1) 71%);
+  width: 100%;
+}
+
+.hero-content {
+  margin: 0 auto;
+  padding: 100px;
+  gap: 300px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  justify-content: center;
+}
+
+.hero-img {
+  width: 400px;
+  height: auto;
+}
+
+.hero-information .header-gold {
+    color: var(--accent-gold);
+}
+
+.hero-information p {
+    color: #cbd5e1;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.catalog-label-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size:14px;
+    color: var(--accent-gold);
+}
+
+.catalog-label-row::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: var(--accent-gold);
+    opacity: 0.8;
+}
+
+/* Page Media Queries */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .foundation-container {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    visibility: hidden;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    background-image: linear-gradient(171deg, rgba(11, 17, 59, 0.9) 39%, rgba(21, 30, 84, 0.9) 71%), url("../../img/branding/logo.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 500px;
+  }
+}
