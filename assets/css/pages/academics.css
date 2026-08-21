@@ -115,7 +115,8 @@
   gap: 50px;
 }
 
-.faculty-text h1, p {
+.faculty-text h1,
+p {
   margin-bottom: 20px;
 }
 
@@ -145,8 +146,21 @@
   gap: 20px;
 }
 
+.faculty-card:hover {
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.5s;
+}
+
 .faculty-card button {
   margin-bottom: 30px;
+  background-color: var(--primary-navy);
+  color: var(--white);
+}
+
+.faculty-card button:hover {
+  color: var(--text-gray);
+  transition: all ease-in-out 0.4s;
+  transform: translatex(-2px);
 }
 
 /* Page Media Queries */
@@ -159,7 +173,11 @@
     height: 500px;
     background: #0b113b;
     background-image:
-      linear-gradient(171deg, rgba(11, 17, 59, 0.9) 39%, rgba(21, 30, 84, 0.9) 71%),
+      linear-gradient(
+        171deg,
+        rgba(11, 17, 59, 0.9) 39%,
+        rgba(21, 30, 84, 0.9) 71%
+      ),
       url("../../img/branding/logo.png");
     background-position: top;
     background-repeat: no-repeat;
@@ -225,7 +243,7 @@
   .faculty-text {
     margin: 0 20px;
   }
-  
+
   .faculty-text p {
     font-size: 0.8rem;
   }

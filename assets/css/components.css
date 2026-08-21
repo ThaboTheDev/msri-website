@@ -163,6 +163,12 @@ header {
   height: 60px;
 }
 
+.logo a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
 .logo-text {
   font-family: var(--font-heading);
   color: var(--white);
