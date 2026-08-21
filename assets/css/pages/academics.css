@@ -27,6 +27,13 @@
 
 .hero-information .header-gold {
   color: var(--accent-gold);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hero-information .header-white {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .hero-information p {
@@ -96,6 +103,52 @@
   color: var(--white);
 }
 
+/* course section  */
+
+.course-info {
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.faculty-text h1, p {
+  margin-bottom: 20px;
+}
+
+.faculty-text h1 {
+  font-weight: 700px;
+  color: var(--primary-navy);
+  font-size: 2.4rem;
+}
+
+.faculty-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.faculty-card {
+  background-color: var(--white);
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border-top: 4px solid var(--primary-navy);
+  width: 460px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+}
+
+.faculty-card button {
+  margin-bottom: 30px;
+}
+
 /* Page Media Queries */
 @media (max-width: 768px) {
   .hero h1 {
@@ -163,5 +216,25 @@
   .tag-all {
     background-color: #0b113b;
     color: var(--white);
+  }
+
+  .course-info {
+    margin: 20px 25px;
+  }
+
+  .faculty-text {
+    margin: 0 20px;
+  }
+  
+  .faculty-text p {
+    font-size: 0.8rem;
+  }
+
+  .faculty-cards {
+    flex-direction: column;
+  }
+
+  .faculty-card {
+    width: 370px;
   }
 }
