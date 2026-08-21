@@ -7,8 +7,8 @@
 :root {
   --primary-navy: #0b113b;
   --primary-navy-light: #151e54;
-  --accent-gold: #E9C176;
-  --accent-gold-hover: #CBA65E;
+  --accent-gold: #e9c176;
+  --accent-gold-hover: #cba65e;
   --text-dark: #1e293b;
   --text-gray: #475569;
   --bg-light: #f8fafc;
@@ -17,13 +17,15 @@
   --font-body: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
   font-family: var(--font-body);
   color: var(--text-dark);
   background-color: var(--bg-light);
   line-height: 1.6;
   max-width: 100%;
-  overflow-x: hidden; /* This hides horizontal scrollbars and prevents side-scrolling */
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 h1,
