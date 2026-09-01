@@ -105,7 +105,7 @@
 
 /* course section  */
 
-.course-info {
+/* .course-info {
   display: flex;
   width: 100%;
   margin: 40px 0;
@@ -161,6 +161,127 @@ p {
   color: var(--text-gray);
   transition: all ease-in-out 0.4s;
   transform: translatex(-2px);
+} */
+
+/* --- Course Catalog Section --- */
+.course-catalog-section {
+    padding: 60px 30px 100px; /* Padding top gives breathing room below the sticky filter */
+    background-color: #f6f8fa; /* Matches the background outside the filter */
+}
+
+.catalog-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.catalog-intro h2 {
+    color: var(--bg-dark, #0d1633);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.catalog-intro p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* --- Course Grid --- */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Individual Course Card --- */
+.course-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    border-top: 4px solid var(--btn-gold, #c6ac6a); /* University-style top border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-content {
+    padding: 30px;
+    flex-grow: 1; /* Pushes the footer to the bottom */
+}
+
+.accreditation-badge {
+    display: inline-block;
+    background-color: #e5e9f9; /* Soft purple matching your filter tags */
+    color: #4a54c1;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.academic-icon {
+    width: 44px;
+    height: 44px;
+    color: var(--bg-dark, #0b113b); /* Automatically uses your navy color */
+    margin-bottom: 20px;
+}
+
+.course-title {
+    color: var(--bg-dark, #0d1633);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.course-description {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* --- Meta / Focus Areas Tags --- */
+.course-meta strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--bg-dark, #0d1633);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.course-meta span {
+    display: inline-block;
+    background-color: #f1f3f5;
+    color: #444;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* --- Card Footer & Button --- */
+.card-footer {
+    padding: 20px 30px 30px;
+    border-top: 1px solid #f1f3f5;
+    text-align: center;
+}
+
+.card-footer .btn-outline-card {
+    display: block;
+    width: 100%; /* Makes button span full width of card */
+    text-align: center;
 }
 
 /* Page Media Queries */
