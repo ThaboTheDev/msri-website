@@ -1,6 +1,5 @@
-/* Add this to your styles to prevent content hiding behind fixed header */
 body {
-  padding-top: 90px; /* MATCH THIS TO YOUR HEADER HEIGHT */
+  padding-top: 90px;
 }
 
 /* Button Section */
@@ -79,7 +78,7 @@ header {
 .dropdown-menu {
   position: absolute;
   list-style: none;
-  background-color: var(--primary-navy);
+  background-color: var(--primary-navy-light);
   color: var(--accent-gold);
   width: 130px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -111,7 +110,7 @@ header {
 
 .mega-menu-container {
   position: absolute;
-  background-color: var(--primary-navy);
+  background-color: var(--primary-navy-light);
   color: var(--accent-gold);
   width: 250px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -122,6 +121,10 @@ header {
 
   visibility: hidden;
   opacity: 0;
+}
+
+.has-mega-menu {
+  position: relative;
 }
 
 .has-mega-menu:hover .mega-menu-container,
@@ -151,6 +154,38 @@ header {
 .menu-column ul li a:hover {
   text-decoration: underline;
   transition: all ease-in-out 0.5s;
+}
+
+.split-menu {
+  display: flex;
+  width: 900px; 
+  padding: 0; 
+  
+  /* THE FIX: Centers the 900px menu directly under the link */
+  left: 50%;
+  margin-left: -450px; /* Pulls it back to the left by exactly half its width */
+}
+
+.menu-zone {
+  flex: 1;
+  padding: 30px;
+}
+
+.legacy-zone {
+  background-color: var(--primary-navy-light);
+}
+
+.skills-zone {
+  background-color: var(--primary-navy-light); /* Visually separates the skills side */
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.zone-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--accent-gold);
+  padding-bottom: 10px;
+  display: inline-block;
 }
 
 .logo {

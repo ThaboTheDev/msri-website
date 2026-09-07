@@ -44,7 +44,7 @@
         <nav class="nav-links">
           <ul class="link-list">
             <li>
-              <a href="#">Home</a>
+              <a href="index.html">Home</a>
             </li>
 
             <li class="has-dropdown-menu">
@@ -74,7 +74,7 @@
             </li>
 
             <li class="has-mega-menu">
-              <a href="#" class="dropdown-link">
+              <a href="academics.html" class="dropdown-link">
                 Academics
                 <svg
                   class="chevron-icon"
@@ -85,32 +85,81 @@
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 >
-                  <polyline points="6 9 12 15 18 9"></polyline></svg
-              ></a>
-              <div class="mega-menu-container">
-                <div class="mega-menu-grid">
-                  <!-- Column 1 -->
-                  <div class="menu-column">
-                    <h4>Science & Agriculture</h4>
-                    <ul>
-                      <li>
-                        <a href="academics.html#course-catalog"
-                          >Livestock Farmer</a
-                        >
-                      </li>
-                      <li>
-                        <a href="academics.html#course-catalog">Crop Produce Analyst</a>
-                      </li>
-                      <li>
-                        <a href="academics.html#course-catalog"
-                          >Poultry Farming</a
-                        >
-                      </li>
-                    </ul>
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </a>
+
+              <!-- We make the container wider to fit both tracks -->
+              <div class="mega-menu-container split-menu">
+                <!-- Left Side: Legacy -->
+                <div class="menu-zone legacy-zone">
+                  <h3 class="zone-title">Legacy Qualifications</h3>
+                  <div class="mega-menu-grid">
+                    <div class="menu-column">
+                      <h4>Business, Law & Society</h4>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            >Faculty of Business and Economic Studies</a
+                          >
+                        </li>
+                        <li><a href="#">Faculty of Law</a></li>
+                        <li>
+                          <a href="#"
+                            >Faculty of Social Science and Humanities</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="menu-column">
+                      <h4>Science & Health</h4>
+                      <ul>
+                        <li>
+                          <a href="#">Faculty of Science and Agriculture</a>
+                        </li>
+                        <li><a href="#">Health Sciences</a></li>
+                        <li><a href="#">Department of Animal Care</a></li>
+                      </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="menu-column">
+                      <h4>Arts, Media & Culture</h4>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            >Faculty of Indigenous Spirituality and African
+                            Matters</a
+                          >
+                        </li>
+                        <li><a href="#">Faculty of Media and Journalism</a></li>
+                        <li><a href="#">Faculty of Art and Music</a></li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+
+                <!-- Right Side: Skills (Give this a slight background color in CSS) -->
+                <div class="menu-zone skills-zone">
+                  <h3 class="zone-title text-gold">Skills-Based (QCTO)</h3>
+                  <div class="mega-menu-grid">
+                    <div class="menu-column">
+                      <h4>Agriculture</h4>
+                      <ul>
+                        <li><a href="academics.html#course-catalog">Poultry Farming</a></li>
+                        <li><a href="academics.html#course-catalog">Livestock Farmer</a></li>
+                        <li>
+                          <a href="academics.html#course-catalog">Crop Produce Analyst</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li><a href="#">Research</a></li>
-            <li><a href="#">Admissions</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
           <a href="https://www.msri.online/" class="btn btn-gold"
@@ -170,17 +219,20 @@
           <div class="card-icon"></div>
           <h3>Poultry Farming</h3>
           <p>
-            Enter a high-demand agricultural sector with comprehensive training from ethical rearing to commercial management.
+            Enter a high-demand agricultural sector with comprehensive training
+            from ethical rearing to commercial management.
           </p>
           <ul class="academic-list">
             <li>
               <strong>Accreditation: </strong>QCTO Accredited Qualification.
             </li>
             <li>
-              <strong>Focus Areas: </strong>Breeding genetics, nutrition, strict bio-security, and housing systems.
+              <strong>Focus Areas: </strong>Breeding genetics, nutrition, strict
+              bio-security, and housing systems.
             </li>
             <li>
-              <strong>Career Outcome: </strong>Entrepreneurial expert in profitable commercial poultry operations.
+              <strong>Career Outcome: </strong>Entrepreneurial expert in
+              profitable commercial poultry operations.
             </li>
           </ul>
           <a href="academics.html#poultry-farming" class="btn btn-outline-card"
@@ -191,17 +243,20 @@
           <div class="card-icon"></div>
           <h3>Livestock Farmer</h3>
           <p>
-            Master sustainable and ethical livestock management to drive commercial farming success across the continent.
+            Master sustainable and ethical livestock management to drive
+            commercial farming success across the continent.
           </p>
           <ul class="academic-list">
             <li>
               <strong>Accreditation: </strong>QCTO Accredited Qualification.
             </li>
             <li>
-              <strong>Focus Areas: </strong>Advanced herd management, disease control, and holistic animal welfare.
+              <strong>Focus Areas: </strong>Advanced herd management, disease
+              control, and holistic animal welfare.
             </li>
             <li>
-              <strong>Career Outcome: </strong>Agribusiness leader in commercial livestock production.
+              <strong>Career Outcome: </strong>Agribusiness leader in commercial
+              livestock production.
             </li>
           </ul>
           <a href="academics.html#livestock-farmer" class="btn btn-outline-card"
@@ -210,19 +265,22 @@
         </div>
         <div class="card">
           <div class="card-icon"></div>
-         <h3>Crop Produce Analyst</h3>
+          <h3>Crop Produce Analyst</h3>
           <p>
-            Bridge the gap between empirical science and global food security with hands-on agricultural expertise.
+            Bridge the gap between empirical science and global food security
+            with hands-on agricultural expertise.
           </p>
           <ul class="academic-list">
             <li>
               <strong>Accreditation: </strong>QCTO Accredited Qualification.
             </li>
             <li>
-              <strong>Focus Areas: </strong>Soil fertility, precision agriculture, and ecological pest management.
+              <strong>Focus Areas: </strong>Soil fertility, precision
+              agriculture, and ecological pest management.
             </li>
             <li>
-              <strong>Career Outcome: </strong>Scientific analyst ensuring high-quality, commercial-grade produce.
+              <strong>Career Outcome: </strong>Scientific analyst ensuring
+              high-quality, commercial-grade produce.
             </li>
           </ul>
           <a href="academics.html#crop-analyst" class="btn btn-outline-card"
