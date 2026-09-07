@@ -1,0 +1,35 @@
+.hero {
+  background: #0b113b;
+  background: linear-gradient(
+    171deg,
+    rgba(11, 17, 59, 1) 39%,
+    rgba(21, 30, 84, 1) 71%
+  );
+  width: 100%;
+  color: var(--white);
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+    color: var(--accent-gold);
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.hero-subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgba(47, 49, 61, 0.5);
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.hero-subtitle {
+  /* font-size: 1.2rem; */
+  font-weight: 7ww00;
+  color: var(--accent-gold);
+}
