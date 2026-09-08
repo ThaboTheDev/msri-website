@@ -12,24 +12,527 @@
 }
 
 .hero h1 {
-    color: var(--accent-gold);
-    font-size: 2.4rem;
-    font-weight: 700;
+  color: var(--accent-gold);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  /* padding: 150px 20px; */
 }
 
 .hero-subtitle-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   background-color: rgba(47, 49, 61, 0.5);
-  padding: 10px 20px;
+  padding: 5px 10px;
   border-radius: 50px;
   width: fit-content;
 }
 
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(160, 160, 160);
+  max-width: 600px;
+  margin-top: 20px;
+}
+
 .hero-subtitle {
-  /* font-size: 1.2rem; */
-  font-weight: 7ww00;
+  font-size: 12px;
+  font-weight: 700;
   color: var(--accent-gold);
+}
+
+.hero-highlights-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(160, 160, 160);
+}
+
+.hero-highlights-container .tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Container updates for overlapping effect */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Prevents touching edges on smaller screens */
+}
+
+.contact-info-container {
+  display: flex;
+  gap: 30px; /* Increased gap for a cleaner layout */
+  margin-top: -80px; /* THE MAGIC: Pulls cards up over the header background */
+  max-width: 1200px;
+  margin-bottom: 60px;
+  justify-content: center;
+  position: relative; /* Required for z-index to work */
+  z-index: 10; /* Ensures it sits above the dark background */
+  width: 100%;
+}
+
+/* Card layout updates */
+.contact-info-item {
+  flex: 1; /* Ensures all three cards are exactly the same width */
+  border-top: var(--accent-gold) 4px solid;
+  background-color: var(--primary-navy-light); /* Kept your dark color */
+  padding: 35px 30px; /* Increased padding for the airy look */
+  border-radius: 8px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Adds depth to the overlap */
+}
+
+/* The new Icon Box at the top left */
+.card-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.05); /* Subtle dark box */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.card-icon-wrapper svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--accent-gold);
+}
+
+/* Typography alignment */
+.contact-info-item h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: var(--font-body, serif); /* Matches the serif look of B */
+}
+
+.contact-info-item p {
+  font-size: 0.95rem;
+  color: #cbd5e1; /* Slightly muted white for readability */
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1; /* Pushes the lists and callouts to the bottom evenly */
+}
+
+/* Structured Contact List (Emails, phones, etc.) */
+.contact-details-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-details-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.contact-details-list li svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--accent-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Bottom Callout Box (The shaded footer inside the cards) */
+.card-bottom-callout {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: var(--white);
+}
+
+.card-bottom-callout svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--accent-gold);
+}
+
+/* specific style for the clickable LMS helpdesk box */
+.callout-action {
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+.callout-action:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Contact Form Section Wrapper --- */
+.Contact-form {
+  padding: 80px 20px;
+  background-color: #f6f8fa; /* Soft light background to make the form card pop */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --- Section Typography & Intro --- */
+.Contact-form > p:first-of-type {
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.Contact-form h2 {
+  color: var(--primary-navy);
+  font-size: 2.5rem;
+  font-family: var(--font-heading, sans-serif);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.Contact-form h2 + p {
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* --- The Form Card Container --- */
+.Contact-form form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft premium shadow */
+  width: 100%;
+  max-width: 800px;
+  border-top: 4px solid var(--accent-gold); /* MSRI brand accent */
+  
+  /* Grid Layout for Desktop */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Make Subject and Message fields span the full width */
+.form-group:nth-child(5), 
+.form-group:nth-child(6),
+.Contact-form form button {
+  grid-column: 1 / -1;
+}
+
+/* --- Labels & Inputs --- */
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--primary-navy);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+  background-color: #f9fafb; /* Very light gray inside inputs */
+  transition: all 0.3s ease;
+}
+
+/* Custom dropdown arrow for the Select element */
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230b113b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+/* Input Focus States (When user clicks to type) */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background-color: #ffffff;
+  /* Creates a soft gold glow ring around the active input */
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15); 
+}
+
+.form-group textarea {
+  resize: vertical; /* Allows user to drag the box taller, but not wider */
+  min-height: 120px;
+}
+
+/* --- Submit Button --- */
+.Contact-form form button[type="submit"] {
+  background-color: var(--accent-gold);
+  color: var(--primary-navy);
+  padding: 16px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.Contact-form form button[type="submit"]:hover {
+  background-color: #dab67a; /* Lighter gold on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- FAQ Section Wrapper --- */
+.questions {
+  padding: 80px 20px;
+  background-color: #ffffff; /* Crisp white background to contrast with the form section */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions h2 {
+  color: var(--primary-navy);
+  font-size: 2.5rem;
+  font-family: var(--font-heading, sans-serif);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* --- FAQ Container --- */
+.faq-container {
+  width: 100%;
+  max-width: 800px; /* Matches the width of your contact form for consistency */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each question */
+}
+
+/* --- Individual FAQ Card --- */
+.faq-item {
+  background-color: #f9fafb; /* Very light gray */
+  border-left: 4px solid var(--accent-gold); /* MSRI brand accent on the left */
+  border-radius: 0 8px 8px 0;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect: Creates an interactive feel */
+.faq-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transform: translateX(5px); /* Slides slightly to the right */
+}
+
+/* --- FAQ Typography --- */
+.faq-item h3 {
+  color: var(--primary-navy);
+  font-size: 1.25rem;
+  margin: 0 0 12px 0;
+  font-family: var(--font-body, serif); /* Uses the serif font for an academic feel */
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Academics CTA Banner Container --- */
+.academics {
+  background-color: var(--primary-navy);
+  margin: 60px auto 80px; /* Centers the box and gives it breathing room */
+  max-width: 1200px;
+  padding: 60px 50px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(11, 17, 59, 0.15); /* Soft deep shadow */
+  
+  /* Desktop Layout: Side-by-side */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* --- Left Side: Typography --- */
+.academics > div:first-child {
+  flex: 1;
+  max-width: 650px;
+}
+
+/* Small Subheading */
+.academics p:first-of-type {
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+/* Main Heading */
+.academics h2 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-family: var(--font-heading, sans-serif);
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+}
+
+/* Description Text */
+.academics h2 + p {
+  color: #cbd5e1; /* Subtle slate blue/grey for readability */
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Right Side: Button Group --- */
+.academics > div:last-child {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensures buttons wrap nicely if screen gets a bit tight */
+}
+
+/* --- The New Grey Button Style --- */
+/* (Designed as a sleek, semi-transparent glass button to contrast the solid Gold one) */
+.btn-grey {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle white fill */
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-grey:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: var(--white);
+  color: var(--white);
+  transform: translate(-2px);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  /* --- HERO MOBILE FIXES --- */
+  .hero h1 {
+    font-size: 1.8rem; /* Scaled down for smaller screens */
+  }
+  
+  .hero-container {
+    padding-bottom: 100px; /* Reduces the massive bottom padding on mobile */
+  }
+  
+  .hero-highlights-container {
+    flex-direction: column; /* Stacks the tags */
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* --- OVERLAPPING CARDS MOBILE FIXES --- */
+  .contact-info-container {
+    flex-direction: column; /* Stacks the 3 cards vertically */
+    margin-top: -40px; /* Reduces the overlap slightly so it doesn't cover text */
+  }
+
+  .contact-info-item {
+    width: 100%; /* Ensures stacked cards take full width */
+  }
+
+  /* --- EXISTING MOBILE FIXES --- */
+  .Contact-form form {
+    grid-template-columns: 1fr; /* Stacks all fields vertically */
+    padding: 30px 20px;
+  }
+  
+  .form-group:nth-child(5), 
+  .form-group:nth-child(6),
+  .Contact-form form button {
+    grid-column: span 1; /* Resets the column span for mobile */
+  }
+
+  .questions {
+    padding: 60px 20px;
+  }
+  
+  .questions h2 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+  }
+  
+  .faq-item {
+    padding: 20px; /* Slightly less padding on mobile screens */
+  }
+
+  .academics {
+    flex-direction: column; /* Stacks text and buttons */
+    text-align: center;
+    padding: 50px 30px;
+    margin: 40px 20px 60px; /* Adds side margin so it doesn't touch screen edges */
+  }
+
+  .academics > div:first-child {
+    max-width: 100%;
+  }
+
+  .academics h2 {
+    font-size: 2rem;
+  }
+
+  .academics > div:last-child {
+    justify-content: center; /* Centers the buttons on mobile */
+    width: 100%;
+  }
+
+  /* Makes buttons full-width on very small screens */
+  @media (max-width: 480px) {
+    .academics > div:last-child {
+      flex-direction: column;
+    }
+    .academics .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
