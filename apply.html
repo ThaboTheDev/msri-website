@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply - MSRI</title>
+    <link rel="icon" type="image/png" href="../assets/img/branding/logo.png" />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+    <link rel="stylesheet" href="./assets/css/pages/apply.css" />
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body class="application-body">
+    <div class="app-split-layout">
+      <!-- LEFT SIDE: Branding & Trust Signals -->
+      <div class="app-sidebar">
+        <div class="app-sidebar-content">
+          <a href="index.html" class="app-logo">
+            <img
+              src="./assets/img/branding/logo.png"
+              alt="MSRI Logo"
+              class="logo-image"
+            />
+            <div class="logo-text">
+              MZUVUKILE SLABBERT<br />RADEBE INSTITUTE
+            </div>
+          </a>
+
+          <div class="app-sidebar-text">
+            <h1>Begin Your Academic Journey.</h1>
+            <p>
+              Join a community rooted in indigenous wisdom and driven by modern
+              academic excellence.
+            </p>
+          </div>
+
+          <ul class="app-trust-list">
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+              QCTO Accredited Qualifications
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              World-Class Faculty Coordinators
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" />
+              </svg>
+              24/7 E-Learning Portal Access
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: The Registration Form -->
+      <div class="app-form-area">
+        <div class="app-form-wrapper">
+          <div class="app-form-header">
+            <h2>Student Application</h2>
+            <p>
+              Create your profile to apply for Legacy Degrees or Skills-Based
+              programs.
+            </p>
+          </div>
+
+          <form class="msri-apply-form">
+            <!-- Personal Details -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="idNumber">ID / Passport Number</label>
+              <input type="text" id="idNumber" required />
+            </div>
+
+            <!-- Academic Interest -->
+            <div class="form-group">
+              <label for="track">Academic Track</label>
+              <select id="track" required>
+                <option value="">Select a track...</option>
+                <option value="legacy">
+                  Legacy Qualification (Degree/Diploma)
+                </option>
+                <option value="skills">Skills-Based (QCTO Certificate)</option>
+              </select>
+            </div>
+
+            <!-- Password Setup (For LMS Portal later) -->
+            <div class="form-group">
+              <label for="password">Create Student Portal Password</label>
+              <input type="password" id="password" required />
+              <span class="password-hint">Minimum 8 characters.</span>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-full">
+              Submit Application
+            </button>
+
+            <div class="form-footer">
+              Already have an account?
+              <a href="login.html">Sign In to Portal</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

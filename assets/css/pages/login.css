@@ -1,0 +1,40 @@
+/* --- Login Specific Layout --- */
+.form-login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -5px; /* Pulls it slightly closer to the password field */
+  margin-bottom: 10px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 400 !important; /* Overrides the bold label style from the main form */
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--primary-navy); /* Makes the checkbox tick match your brand */
+  cursor: pointer;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  color: var(--primary-navy);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: var(--accent-gold);
+  text-decoration: underline;
+}

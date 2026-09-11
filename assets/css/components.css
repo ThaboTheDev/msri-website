@@ -137,7 +137,7 @@ header {
 
 .mega-menu-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .menu-column {
@@ -158,12 +158,10 @@ header {
 
 .split-menu {
   display: flex;
-  width: 900px; 
+  width: 1200px; 
   padding: 0; 
-  
-  /* THE FIX: Centers the 900px menu directly under the link */
   left: 50%;
-  margin-left: -450px; /* Pulls it back to the left by exactly half its width */
+  margin-left: -600px; /* Pulls it back to the left by exactly half its width */
 }
 
 .menu-zone {

@@ -1,0 +1,224 @@
+/* --- Application Page Base --- */
+.application-body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden; /* Prevents scrolling on desktop so it looks like a sleek web app */
+}
+
+.app-split-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* --- Left Sidebar (Branding) --- */
+.app-sidebar {
+  flex: 0 0 45%; /* Takes up 45% of the screen */
+  background: linear-gradient(171deg, rgba(11, 17, 59, 1) 10%, rgba(21, 30, 84, 1) 90%);
+  color: var(--white);
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-sidebar-content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.logo-image {
+  height: 60px;
+}
+
+.app-sidebar-text h1 {
+  color: var(--accent-gold);
+  font-size: 2.8rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-family: var(--font-heading, sans-serif);
+}
+
+.app-sidebar-text p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+.app-trust-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-trust-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.app-trust-list svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--accent-gold);
+}
+
+/* --- Right Side (Form Area) --- */
+.app-form-area {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  overflow-y: auto; /* Allows scrolling just on the form side if it gets too tall */
+}
+
+.app-form-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+.app-form-header {
+  margin-bottom: 40px;
+}
+
+.app-form-header h2 {
+  font-size: 2rem;
+  color: var(--primary-navy);
+  margin-bottom: 10px;
+  font-family: var(--font-heading, sans-serif);
+}
+
+.app-form-header p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* --- Form Elements --- */
+.msri-apply-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.msri-apply-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.msri-apply-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-navy);
+}
+
+.msri-apply-form input,
+.msri-apply-form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+.msri-apply-form input:focus,
+.msri-apply-form select:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15); 
+}
+
+.password-hint {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.btn-full {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.form-footer a {
+  color: var(--primary-navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  text-decoration: underline;
+  color: var(--accent-gold);
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 900px) {
+  .application-body {
+    overflow: auto; /* Re-enable body scroll on mobile */
+  }
+
+  .app-split-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .app-sidebar {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .app-sidebar-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .app-trust-list {
+    align-items: center; /* Center the list on mobile */
+  }
+
+  .app-form-area {
+    padding: 40px 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
