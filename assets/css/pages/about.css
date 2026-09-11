@@ -1,0 +1,360 @@
+/* --- Page Hero (Can be reused for other subpages like About Us) --- */
+.page-hero {
+  background: linear-gradient(
+    171deg,
+    rgba(11, 17, 59, 1) 39%,
+    rgba(21, 30, 84, 1) 71%
+  );
+  padding: 120px 20px 80px;
+  text-align: center;
+  color: var(--white);
+}
+
+.page-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-hero h1 {
+  font-size: 3rem;
+  color: var(--white);
+  font-family: var(--font-heading, sans-serif);
+  margin: 15px 0;
+}
+
+/* --- Timeline Section --- */
+.timeline-section {
+  background-color: #f6f8fa;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.timeline-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* The vertical gold line down the middle */
+.timeline-line {
+  position: absolute;
+  width: 4px;
+  background-color: var(--accent-gold);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Individual Timeline Containers */
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+/* Positioning left and right items */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* The dots on the line */
+.timeline-dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-navy);
+  border: 4px solid var(--accent-gold);
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+.timeline-item.left .timeline-dot {
+  right: -10px; /* Positions dot perfectly on the center line */
+}
+
+.timeline-item.right .timeline-dot {
+  left: -10px; /* Positions dot perfectly on the center line */
+}
+
+/* The actual content box */
+.timeline-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-top: 3px solid var(--primary-navy);
+  transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-date {
+  display: inline-block;
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.timeline-content h3 {
+  color: var(--primary-navy);
+  font-size: 1.4rem;
+  margin: 0 0 15px 0;
+  font-family: var(--font-body, serif);
+}
+
+.timeline-content p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* --- Core Values Section --- */
+.core-values {
+  background-color: var(--primary-navy);
+  padding: 100px 20px;
+  color: var(--white);
+}
+
+.values-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.values-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.values-header h2 {
+  color: var(--accent-gold);
+  font-size: 2.5rem;
+  font-family: var(--font-heading, sans-serif);
+  margin: 0 0 15px 0;
+}
+
+.values-header p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* --- Values Grid --- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background-color: rgba(255, 255, 255, 0.03); /* Subtle glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid var(--accent-gold);
+  border-radius: 12px;
+  padding: 40px 30px;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.value-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(197, 160, 89, 0.1); /* Soft gold circle */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.value-icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--accent-gold);
+}
+
+.value-card h3 {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-family: var(--font-body, serif);
+  margin: 0 0 15px 0;
+}
+
+.value-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* --- Accreditation Grid --- */
+.accreditation-bodies {
+  background-color: #f6f8fa;
+}
+
+.accred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.accred-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border-bottom: 4px solid var(--accent-gold);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accred-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.accred-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(11, 17, 59, 0.05); /* Very light navy */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.accred-icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--primary-navy);
+}
+
+.accred-card h3 {
+  color: var(--primary-navy);
+  font-size: 1.5rem;
+  margin: 0 0 5px;
+  font-family: var(--font-heading, sans-serif);
+}
+
+.accred-fullname {
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+}
+
+.accred-desc {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+.accred-status {
+  background-color: #f1f3f5;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: #333;
+}
+
+.accred-status strong {
+  color: #2e7d32; /* A subtle, authoritative green for "Approved" */
+}
+
+/* --- Verification CTA Banner --- */
+.verification-cta {
+  background: linear-gradient(171deg, rgba(11, 17, 59, 0.95) 0%, rgba(21, 30, 84, 0.95) 100%), url('path-to-your-background-pattern.jpg'); /* Optional: Add a faint background image */
+  background-color: var(--primary-navy);
+  padding: 80px 20px;
+  text-align: center;
+  color: var(--white);
+}
+
+.verification-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.verification-content h2 {
+  color: var(--accent-gold);
+  font-size: 2.2rem;
+  margin: 0 0 15px;
+  font-family: var(--font-heading, sans-serif);
+}
+
+.verification-content p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0 0 30px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  /* Move the line to the far left */
+  .timeline-line {
+    left: 20px;
+    transform: none;
+  }
+
+  /* Force all items to take full width and align left */
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px; /* Makes room for the line on the left */
+    padding-right: 0;
+    text-align: left;
+  }
+
+  /* Reset positioning for left and right classes */
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  /* Move all dots to align with the new left-side line */
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 12px;
+    right: auto;
+  }
+
+  .page-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .core-values {
+    padding: 70px 20px;
+  }
+
+  .values-header h2 {
+    font-size: 2rem;
+  }
+}
