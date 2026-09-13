@@ -41,6 +41,7 @@
               <a href="index.html">Home</a>
             </li>
 
+            <!-- FIXED ABOUT US: Removed stray tags and fixed nesting -->
             <li class="has-dropdown-menu">
               <a href="#" class="dropdown-link">
                 About Us
@@ -56,20 +57,19 @@
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </a>
-
               <ul class="dropdown-menu">
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="partners.html">Partners</a></li>
                 <li><a href="news-media.html">News & Media</a></li>
                 <li><a href="events.html">Events</a></li>
               </ul>
-              </ul>
             </li>
 
+            <!-- FIXED ACADEMICS: Cleaned up the closing tags at the bottom of this block -->
             <li class="has-mega-menu">
-  <a href="academics.html" class="dropdown-link">
-    Academics
-    <svg
+              <a href="#" class="dropdown-link">
+                Academics
+                <svg
                   class="chevron-icon"
                   viewBox="0 0 24 24"
                   fill="none"
@@ -80,82 +80,145 @@
                 >
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
-  </a>
-  
-  <!-- We make the container wider to fit both tracks -->
-  <div class="mega-menu-container split-menu">
-    
-    <!-- Left Side: Legacy -->
-    <div class="menu-zone legacy-zone">
-      <h3 class="zone-title">Legacy Qualifications</h3>
-      <div class="mega-menu-grid">
-        <div class="menu-column">
-                    <h4>Business, Law & Society</h4>
-                    <ul>
-                      <li>
-                        <a href="#">Faculty of Business and Economic Studies</a>
-                      </li>
-                      <li><a href="#">Faculty of Law</a></li>
-                      <li>
-                        <a href="#">Faculty of Social Science and Humanities</a>
-                      </li>
-                    </ul>
+              </a>
+              <!-- The Split Mega Menu Container -->
+              <div class="mega-menu-container split-menu">
+                <!-- LEFT SIDE: Legacy Qualifications (Schools) -->
+                <div class="menu-zone legacy-zone">
+                  <h3 class="zone-title">Legacy Qualifications</h3>
+                  <div
+                    class="mega-menu-grid"
+                    style="grid-template-columns: repeat(2, 1fr)"
+                  >
+                    <!-- Legacy Column 1 -->
+                    <div class="menu-column">
+                      <h4>Business, Law & Society</h4>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            >School of Business and Economic Studies</a
+                          >
+                        </li>
+                        <li><a href="#">School of Law</a></li>
+                        <li>
+                          <a href="#"
+                            >School of Social Science and Humanities</a
+                          >
+                        </li>
+                      </ul>
+                      <h4 style="margin-top: 25px">Science & Health</h4>
+                      <ul>
+                        <li>
+                          <a href="#">School of Science and Agriculture</a>
+                        </li>
+                        <li><a href="#">School of Health Sciences</a></li>
+                        <li>
+                          <a href="#">School of Mining and Land Survey</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Legacy Column 2 -->
+                    <div class="menu-column">
+                      <h4>Arts, Media & Spirituality</h4>
+                      <ul>
+                        <li>
+                          <a href="#"
+                            >School of Indigenous Spirituality and African
+                            Matters</a
+                          >
+                        </li>
+                        <li><a href="#">School of Media and Journalism</a></li>
+                        <li><a href="#">School of Art and Music</a></li>
+                        <li><a href="#">Language and Communication</a></li>
+                        <li><a href="#">Public Speaking & Self Mastery</a></li>
+                      </ul>
+                      <h4 style="margin-top: 25px">Tourism & Specialized</h4>
+                      <ul>
+                        <li>
+                          <a href="#">School of Hospitalities and Tourism</a>
+                        </li>
+                        <li><a href="#">TC Entity Qualifications</a></li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+                <!-- RIGHT SIDE: Skills-Based Programs -->
+                <div class="menu-zone skills-zone">
+                  <h3 class="zone-title" style="color: var(--accent-gold)">
+                    Skills-Based (QCTO)
+                  </h3>
+                  <div
+                    class="mega-menu-grid"
+                    style="grid-template-columns: repeat(2, 1fr)"
+                  >
+                    <!-- Skills Column 1 -->
+                    <div class="menu-column">
+                      <h4>Higher Certificates</h4>
+                      <ul>
+                        <li><a href="#">Boiler Making</a></li>
+                        <li><a href="#">TLB</a></li>
+                        <li><a href="#">Artisan</a></li>
+                        <li><a href="#">Carpentry and Welding</a></li>
+                        <li><a href="#">Barber and Nail Technician</a></li>
+                        <li>
+                          <a href="#"
+                            >Higher Certificate in Electrical Engineering</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
 
-                  <!-- Column 2 -->
-                  <div class="menu-column">
-                    <h4>Science & Health</h4>
-                    <ul>
-                      <li>
-                        <a href="#">Faculty of Science and Agriculture</a>
-                      </li>
-                      <li><a href="#">Health Sciences</a></li>
-                      <li><a href="#">Department of Animal Care</a></li>
-                    </ul>
+                    <div class="menu-column">
+                      <h4 style="margin-top: 25px">Agriculture</h4>
+                      <ul>
+                        <li>
+                          <a href="academics.html#course-catalog"
+                            >Poultry Farming</a
+                          >
+                        </li>
+                        <li>
+                          <a href="academics.html#course-catalog"
+                            >Livestock Farmer</a
+                          >
+                        </li>
+                        <li>
+                          <a href="academics.html#course-catalog"
+                            >Crop Produce Analyst</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
                   </div>
+                </div>
+              </div>
+            </li>
+            <!-- Replaced stray div with the correct closing li -->
 
-                  <!-- Column 3 -->
-                  <div class="menu-column">
-                    <h4>Arts, Media & Culture</h4>
-                    <ul>
-                      <li>
-                        <a href="#"
-                          >Faculty of Indigenous Spirituality and African
-                          Matters</a
-                        >
-                      </li>
-                      <li><a href="#">Faculty of Media and Journalism</a></li>
-                      <li><a href="#">Faculty of Art and Music</a></li>
-                    </ul>
-                  </div>
-
-      </div>
-    </div>
-
-    <!-- Right Side: Skills (Give this a slight background color in CSS) -->
-    <div class="menu-zone skills-zone">
-      <h3 class="zone-title text-gold">Skills-Based (QCTO)</h3>
-      <div class="mega-menu-grid">
-        <div class="menu-column">
-          <h4>Agriculture</h4>
-          <ul>
-            <li><a href="#course-catalog">Poultry Farming</a></li>
-            <li><a href="#course-catalog">Livestock Farmer</a></li>
-            <li><a href="#course-catalog">Crop Produce Analyst</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</li>
             <li><a href="#">Research</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
-          <div class="header-actions" style="display: flex; gap: 15px; align-items: center; margin-left: 20px;">
-  <a href="login.html" style="color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.9rem;">Sign In</a>
-  <a href="apply.html" class="btn btn-gold">Apply Now</a>
-</div>
+
+          <div
+            class="header-actions"
+            style="
+              display: flex;
+              gap: 15px;
+              align-items: center;
+              margin-left: 20px;
+            "
+          >
+            <a
+              href="login.html"
+              style="
+                color: var(--white);
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 0.9rem;
+              "
+              >Sign In</a
+            >
+            <a href="apply.html" class="btn btn-gold">Apply Now</a>
+          </div>
         </nav>
       </div>
     </header>
