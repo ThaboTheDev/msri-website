@@ -80,6 +80,7 @@
 
 /* --- Right Side (Form Area) --- */
 .app-form-area {
+  margin-top: 10px;
   flex: 1;
   background-color: #ffffff;
   display: flex;
