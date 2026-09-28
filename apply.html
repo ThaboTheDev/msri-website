@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apply - MSRI</title>
+    <meta name="description" content="Create an MSRI student application profile." />
+    <title>Apply to MSRI | Student Application</title>
     <link rel="icon" type="image/png" href="../assets/img/branding/logo.png" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
@@ -94,28 +95,28 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" required />
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
               </div>
               <div class="form-group">
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" required />
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
               </div>
             </div>
 
             <div class="form-group">
               <label for="email">Email Address</label>
-              <input type="email" id="email" required />
+              <input type="email" id="email" name="email" autocomplete="email" required />
             </div>
 
             <div class="form-group">
               <label for="idNumber">ID / Passport Number</label>
-              <input type="text" id="idNumber" required />
+              <input type="text" id="idNumber" name="idNumber" autocomplete="off" required />
             </div>
 
             <!-- Academic Interest -->
             <div class="form-group">
               <label for="track">Academic Track</label>
-              <select id="track" required>
+              <select id="track" name="track" required>
                 <option value="">Select a track...</option>
                 <option value="legacy">
                   Legacy Qualification (Degree/Diploma)
@@ -127,13 +128,16 @@
             <!-- Password Setup (For LMS Portal later) -->
             <div class="form-group">
               <label for="password">Create Student Portal Password</label>
-              <input type="password" id="password" required />
+              <input type="password" id="password" name="password" autocomplete="new-password" required />
               <span class="password-hint">Minimum 8 characters.</span>
             </div>
 
-            <button type="submit" class="btn btn-gold btn-full">
-              Submit Application
+            <button type="submit" class="btn btn-gold btn-full btn-disabled" disabled>
+              Application submission coming soon
             </button>
+            <p class="form-status-note" role="status">
+              The application portal is being prepared. You can preview the form now; submissions will be enabled soon.
+            </p>
 
             <div class="form-footer">
               Already have an account?
