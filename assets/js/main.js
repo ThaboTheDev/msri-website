@@ -1,9 +1,15 @@
-// 1. Find the hamburger button and the navigation links
+// Mobile navigation is present on the main content pages only.
+// Keep the script safe on the application and login screens, which do not use it.
 const mobileMenuBtn = document.querySelector(".open-menu");
 const navLinks = document.querySelector(".nav-links");
 
-// 2. Listen for a click on the hamburger button
-mobileMenuBtn.addEventListener("click", function () {
-  // 3. Toggle (add/remove) the 'active' class on the nav-links
-  navLinks.classList.toggle("active");
-});
+if (mobileMenuBtn && navLinks) {
+  mobileMenuBtn.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("active");
+    mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
+    mobileMenuBtn.setAttribute(
+      "aria-label",
+      isOpen ? "Close navigation menu" : "Open navigation menu",
+    );
+  });
+}

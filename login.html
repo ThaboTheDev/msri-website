@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Login - MSRI</title>
+    <meta name="description" content="Sign in to the MSRI student portal." />
+    <title>Student Login | MSRI</title>
     <link rel="icon" type="image/png" href="../assets/img/branding/logo.png" />
     <link rel="stylesheet" href="./assets/css/global.css" />
     <link rel="stylesheet" href="./assets/css/components.css" />
@@ -89,8 +90,11 @@
             <div class="form-group">
               <label for="email">Email Address or Student ID</label>
               <input
-                type="email"
+                type="text"
                 id="email"
+                name="email"
+                inputmode="email"
+                autocomplete="username"
                 required
                 placeholder="e.g. student@msri.online"
               />
@@ -101,6 +105,8 @@
               <input
                 type="password"
                 id="password"
+                name="password"
+                autocomplete="current-password"
                 required
                 placeholder="••••••••"
               />
@@ -109,13 +115,14 @@
             <!-- Login specific row: Remember Me & Forgot Password -->
             <div class="form-login-options">
               <label class="remember-me">
-                <input type="checkbox" id="remember" />
+                <input type="checkbox" id="remember" name="remember" />
                 <span>Remember me</span>
               </label>
-              <a href="#" class="forgot-password">Forgot password?</a>
+              <span class="forgot-password is-unavailable" aria-disabled="true">Password reset coming soon</span>
             </div>
 
-            <button type="submit" class="btn btn-gold btn-full">Sign In</button>
+            <button type="submit" class="btn btn-gold btn-full btn-disabled" disabled>Portal sign-in coming soon</button>
+            <p class="form-status-note" role="status">The student portal connection is being prepared.</p>
 
             <div class="form-footer">
               Prospective student? <a href="apply.html">Apply to MSRI</a>
