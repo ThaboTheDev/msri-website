@@ -1,0 +1,8 @@
+# MSRI — Mzuvukile Slabbert Radebe Institute
+# https://msri.education
+
+User-agent: *
+Allow: /
+Disallow: /login.html
+
+Sitemap: https://msri.education/sitemap.xml
